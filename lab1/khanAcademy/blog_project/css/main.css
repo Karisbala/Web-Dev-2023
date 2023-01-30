@@ -1,0 +1,23 @@
+body {
+    background-color: rgb(0, 6, 9);
+    font-family: sans-serif;
+}
+h1{
+    text-align:center;
+}
+p {
+    color: rgb(195, 115, 40);
+    line-height:1.5em;
+    font-size:15px;
+}
+.heading{
+    color: rgb(255, 255, 255);
+    font-family:monospace;
+}
+.date {
+    color: rgb(0,80,155);
+}
+#future-plans {
+    font-weight:bold;
+    font-style:italic;
+}
