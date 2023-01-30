@@ -1,0 +1,14 @@
+.headings {
+    color: rgb(255, 255, 255);
+    font-family: monospace;
+    text-align: center;
+}
+.info {
+    color: rgb(37, 0, 107);
+    font-family: fantasy;
+    text-align: center;
+}
+body {
+
+    background-color: rgb(219, 65, 9);
+}
