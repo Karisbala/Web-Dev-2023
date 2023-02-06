@@ -1,0 +1,1 @@
+Task 3. Create a homepage (blocks in following screen) of [Microsoft](https://microsoft.com/ru-kz) using html/html5 and css/css3.
