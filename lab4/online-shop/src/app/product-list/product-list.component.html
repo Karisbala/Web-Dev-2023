@@ -1,0 +1,27 @@
+<h2>Products</h2>
+
+<div *ngFor="let product of products">
+  <h3>
+    <a
+      [title]="product.name + ' details'"
+      [routerLink]="['/products', product.id]"
+    >
+      {{ product.name }}
+    </a>
+  </h3>
+
+  <div *ngIf="product.image_url">
+    <img [src]="product.image_url" height="200" />
+  </div>
+
+  <p *ngIf="product.description">Description: {{ product.description }}</p>
+
+  <p *ngIf="product.rating">Rating: {{ product.rating }}</p>
+
+  <button type="button" (click)="share(product.url, product.name)">
+    Share
+  </button>
+
+  <app-product-alerts [product]="product" (notify)="onNotify()">
+  </app-product-alerts>
+</div>
