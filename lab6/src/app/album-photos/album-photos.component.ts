@@ -3,7 +3,6 @@ import {Album, AlbumPhotos} from '../models';
 import {ActivatedRoute} from '@angular/router';
 import {Location} from '@angular/common';
 import {AlbumsService} from '../albums.service';
-import {ALBUMS} from '../fake-db';
 
 @Component({
   selector: 'app-album-photos',
