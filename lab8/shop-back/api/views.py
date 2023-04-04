@@ -34,7 +34,11 @@ def category_detail(request, id):
     return JsonResponse(category.to_json())
 
 def products_by_category(request, id):
-    products = Product.objects.filter
+    products = Product.objects.all()
+    products_by_category_json = []
     
+    for product in products:
+        if product.category.id == id:
+            products_by_category_json.append(product.to_json())
     
     return JsonResponse(products_by_category_json, safe=False)

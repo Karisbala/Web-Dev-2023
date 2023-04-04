@@ -32,10 +32,7 @@ class Product(models.Model):
         return {
             'id': self.id,
             'name': self.name,
-            'category': {
-                'id': self.category.id,
-                'name': self.category.name
-            },
+            'category': self.category,
             'price': self.price,
             'description': self.description,
             'count': self.count,
