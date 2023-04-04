@@ -32,3 +32,9 @@ def category_detail(request, id):
         return JsonResponse({'message': str(e)}, status=400)
 
     return JsonResponse(category.to_json())
+
+def products_by_category(request, id):
+    products = Product.objects.filter
+    
+    
+    return JsonResponse(products_by_category_json, safe=False)
