@@ -49,4 +49,4 @@ def topTen_vacancies(request):
     vacancies = Vacancy.objects.all().order_by('-salary','id')
     top_ten_json = [vacancy.to_json() for vacancy in vacancies]
 
-    return JsonResponse(top_ten_json[:3], safe=False)
+    return JsonResponse(top_ten_json[:10], safe=False)
